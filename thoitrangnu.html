@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nữ</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Slabo" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="thoitrangnu.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script>
+  		function hienAo() {
+  			document.getElementById("quan").style.display="none";
+  			document.getElementById("phukien").style.display="none";
+  			document.getElementById("giay").style.display="none";
+  			document.getElementById("hangbanchay").style.display="none";
+  			document.getElementById("spmoi").style.display="none";
+  			document.getElementById("ao").style.display="block";
+  		}
+  		function hienQuan() {
+  			document.getElementById("quan").style.display="block";
+  			document.getElementById("phukien").style.display="none";
+  			document.getElementById("giay").style.display="none";
+  			document.getElementById("hangbanchay").style.display="none";
+  			document.getElementById("spmoi").style.display="none";
+  			document.getElementById("ao").style.display="none";
+  		}
+  		function hienPhukien() {
+  			document.getElementById("quan").style.display="none";
+  			document.getElementById("phukien").style.display="block";
+  			document.getElementById("giay").style.display="none";
+  			document.getElementById("hangbanchay").style.display="none";
+  			document.getElementById("spmoi").style.display="none";
+  			document.getElementById("ao").style.display="none";
+  		}
+  		function hienGiay() {
+  			document.getElementById("quan").style.display="none";
+  			document.getElementById("phukien").style.display="none";
+  			document.getElementById("giay").style.display="block";
+  			document.getElementById("hangbanchay").style.display="none";
+  			document.getElementById("spmoi").style.display="none";
+  			document.getElementById("ao").style.display="none";
+  		}
+  	</script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ChiBeo-Boutique</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="trangchu.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+					<li><a href="thoitrangnam.html"><i class="fa fa-male" aria-hidden="true"></i> Nam</a></li>
+					<li><a href="thoitrangnu.html"><i class="fa fa-female" aria-hidden="true"></i> Nữ</a></li>
+					<li><a href="sale.html"><i class="fa fa-gift" aria-hidden="true"></i> Sale</a></li>
+					<li><a href="#myModal"data-toggle="modal"></i>Đăng nhập</a></li>
+				</ul>
+				
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container chi1">
+		<div class="row">
+			<div class="col-md-3 col-sm-6 text-center chi2"  onclick="hienAo()">
+				<img src="anh19.jpg" width="100%">
+				<span class="chi3">Áo</span>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center chi2" onclick="hienQuan()">
+				<img src="anh20.jpg" width="100%">
+				<span class="chi3">Váy</span>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center chi2" onclick="hienPhukien()">
+				<img src="anh21.jpg" width="100%">
+				<span class="chi3" style="left: 37%">Phụ kiện</span>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center chi2" onclick="hienGiay()">
+				<img src="anh22.jpg" width="100%">
+				<span class="chi3">Giầy</span>
+			</div>
+		</div>
+	</div>
+	<div class="container chi4" id="hangbanchay">
+	<span class="chi7">Hàng bán chạy</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="container chi4" id="spmoi">
+	<span class="chi7">Sản phẩm mới</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="container chi4" id="ao">
+	<span class="chi7">Áo</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh5.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh6.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh7.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh8.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh9.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh10.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh5.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh6.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh7.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh8.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container chi4" id="quan">
+	<span class="chi7">Váy</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container chi4" id="phukien">
+	<span class="chi7">Phụ kiện</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container chi4" id="giay">
+	<span class="chi7">Giầy</span>
+	<div class="row chi6">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6  text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+		<div class="col-md-3 col-sm-6 text-center">
+			<div class="thumbnail">
+				<img src="anh4.jpg" class="w-100%">
+				<h4>Áo phông Cute</h4>
+				<p style="color: red">Giá: 120.000vnđ</p>
+				<a href="chitietsp.html"><button class="chi5">Xem chi tiết</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="chi8">
+	<div class="row">
+		<div class="col-sm-6 chi9">
+			<p><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook: ChiBeoBoutique</p>
+			<p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram: ChiBeo.Shop</p>
+			<p><i class="fa fa-mobile" aria-hidden="true"></i> SĐT: 0969026411</p>
+		</div>
+		<div class="col-sm-6 chi10">
+			<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: Kimchi9848@gmail.com</p>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: Đại học Sư phạm Hà Nội</p>
+			
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>Đăng nhập</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><i class="fa fa-user" aria-hidden="true"></i> Tên đăng nhập:</label>
+            <input type="text" class="form-control" id="psw" placeholder="Nhập tên đăng nhập">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><i class="fa fa-key" aria-hidden="true"></i> Mật khẩu</label>
+            <input type="password" class="form-control" id="usrname" placeholder="Nhập mật khẩu">
+          </div>
+          <button type="submit" class="btn btn-block">Đăng nhập</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

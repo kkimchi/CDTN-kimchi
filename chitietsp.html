@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chitietsanpham</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Slabo" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="chitietsp.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script>
+  		function tru(){
+  			var x=document.getElementById('giatri').value;
+  			x--;
+  			if (x==0) {
+  				x=1;
+  			}
+  			document.getElementById('giatri').value=x;
+  		}
+  		function cong(){
+  			var x=document.getElementById('giatri').value;
+  			x++;
+  			if (x>100) {
+  				x=100;
+  			}
+  			document.getElementById('giatri').value=x;
+  		}
+  		function yellow(){
+  			document.getElementById('anh').src='anh6.jpg';
+  		}
+  		function red(){
+  			document.getElementById('anh').src='anh5.jpg';
+  		}
+  		function orange(){
+  			document.getElementById('anh').src='anh4.jpg';
+  		}
+  	</script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">ChiBeo-Boutique</a>
+			</div>
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="trangchu.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+					<li><a href="thoitrangnam.html"><i class="fa fa-male" aria-hidden="true"></i> Nam</a></li>
+					<li><a href="thoitrangnu.html"><i class="fa fa-female" aria-hidden="true"></i> Nữ</a></li>
+					<li><a href="sale.html"><i class="fa fa-gift" aria-hidden="true"></i> Sale</a></li>
+					<li><a href="#myModal"data-toggle="modal"></i>Đăng nhập</a></li>
+				</ul>
+				
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<div class="container chi1">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<img src="anh5.jpg" width="100%" id="anh">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<h1>Áo cute</h1>
+				<p style="color: red; font-size: 20px">Giá: 120.000vnđ</p>
+				<p style="font-size: 19px"><b>Mô tả:</b> Áo chất đẹp, mát, Sản phẩm của nhà may chất lượng cao</p>
+				<p style="font-size: 19px">Màu: <span class="vien" style="background-color: yellow; display: inline-block; width: 20px; height: 20px" onclick="yellow()"></span> <span class="vien" style="background-color: orange; display: inline-block; width: 20px; height: 20px" onclick="orange()"></span> <span class="vien" style="background-color: red; display: inline-block; width: 20px; height: 20px" onclick="red()"></span></p>
+				<p>Miễn phí vận chuyển khi đơn hàng lớn hơn 5 sản phẩm <i class="fa fa-truck" aria-hidden="true"></i></p>
+				<p style="font-size: 20px">Số lượng: <i class="fa fa-minus-square" aria-hidden="true" onclick="tru()"> <input type="text" value="1" style="resize: horizontal; width: 40px;" readonly id="giatri"></i> <i class="fa fa-plus-square" aria-hidden="true" onclick="cong()"></i></p>
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Mua hàng</button>
+				<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4>Đăng nhập</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><i class="fa fa-user" aria-hidden="true"></i> Tên đăng nhập:</label>
+            <input type="text" class="form-control" id="psw" placeholder="Nhập tên đăng nhập">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><i class="fa fa-key" aria-hidden="true"></i> Mật khẩu</label>
+            <input type="password" class="form-control" id="usrname" placeholder="Nhập mật khẩu">
+          </div>
+          <button type="submit" class="btn btn-block">Đăng nhập</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+		</div>
+	</div>
+			<div class="container" style="border: 1px solid gray; margin-top: 10px">
+				<h2 style="background-color: gray; padding-top: 10px; padding-bottom: 10px; text-align: center">Chi tiết sản phẩm</h2>
+				<div class="row">
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<p>Danh mục</p>
+						<p>Chất liệu</p>
+						<p>Giới tính</p>
+						<p>Kho hàng</p>
+					</div>
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<p>Áo</p>
+						<p>Cotton</p>
+						<p>Unisex</p>
+						<p>Hà Nội</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chi5">
+	<div class="row">
+		<div class="col-sm-6 chi6">
+			<p><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook: ChiBeoBoutique</p>
+			<p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram: ChiBeo.Shop</p>
+			<p><i class="fa fa-mobile" aria-hidden="true"></i> SĐT: 0969026411</p>
+		</div>
+		<div class="col-sm-6 chi7">
+			<p><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: Kimchi9848@gmail.com</p>
+			<p><i class="fa fa-map-marker" aria-hidden="true"></i> Địa chỉ: Đại học Sư phạm Hà Nội</p>
+			
+		</div>
+	</div>
+</div>
+	</body>
+</html>
+
+ 

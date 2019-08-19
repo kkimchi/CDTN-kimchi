@@ -1,0 +1,120 @@
+.navbar{
+	background-color: black !important;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 5px;
+	margin-bottom: 0px;
+}
+body{
+	font: 15px "Slabo", sans-serif;
+	line-height: 1.8;
+}
+.navbar-nav li a:hover{
+	background-color: gray !important;
+}
+.navbar-nav li a,.navbar-brand{
+	color: white !important;
+}
+.chi1{
+	margin-top: 100px;
+}
+.chi2 img{
+	height: 300px !important;
+}
+.chi3{
+	position: absolute;
+	top: 44.3%;
+	left: 44%;
+	color: orange;
+	font-weight: bold;
+	font-size: 20px;
+}
+.chi2 { 
+    transition-duration: 0.5s;
+        /* Safari & Google Chrome */
+        -webkit-transition-duration: 0.5s; 
+        /* Mozilla Firefox */
+        -moz-transition-duration: 0.5s; 
+        /* Opera */
+        -o-transition-duration: 0.5s;
+        /* IE 9 */
+        -ms-transition-duration: 0.5s;
+}
+         
+/* Hover chuột vào thumbnail */
+.chi2:hover {
+    transform: scale(1.2);
+        /* Safari & Google Chrome */
+        -webkit-transform: scale(1.2);
+        /* Mozilla Firefox */
+        -moz-transform: scale(1.2); 
+        /* Opera */
+        -o-transform: scale(1.2);
+        /* IE 9 */
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+.chi4{
+	margin-top: 90px;
+	position: relative;
+	padding-top: 20px;
+}
+.chi5{
+	padding: 10px 20px;
+	background-color: #333;
+	color: #f1f1f1;
+	border-radius: 0;
+}
+.chi5:hover{
+	color: #333;
+	background-color: #f1f1f1;
+	border: 1px solid #333;
+}
+.chi6{
+	border-top: 5px solid gray;
+	padding-top: 30px; 
+}
+.chi7{
+	background-color: #000000;
+	color: #ffffff;
+	padding: 8px;
+	position: absolute;
+	top: 0px;
+	left: 44.3%;
+	border: 2px solid orange;
+	border-radius: 4px;
+	width: 10%;
+	text-align: center;
+}
+@media (max-width: 600px) {
+	.chi7{
+		left: 35%;
+	}
+	
+}
+#ao,#quan,#giay,#phukien{
+	display: none;
+}
+.chi8{
+	background-color: #333743;
+	padding: 30px;
+	margin-top: 40px;
+}
+.chi9{
+	padding-left: 20%;
+	color: white;
+}
+.chi10{
+	padding-left: 20%;
+	color: white;
+}
+.modal-header, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
